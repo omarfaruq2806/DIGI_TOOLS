@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "AI Resume Builder",
+    "description": "Professional resume তৈরির জন্য AI tool",
+    "price": 0,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF"
+    ],
+    "icon": "FileText"
+  },
+  {
+    "id": 2,
+    "name": "Portfolio Website Kit",
+    "description": "Developer portfolio website template",
+    "price": 9,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Responsive design",
+      "Dark mode",
+      "SEO friendly"
+    ],
+    "icon": "Globe"
+  },
+  {
+    "id": 3,
+    "name": "AI Logo Generator",
+    "description": "মিনিটে logo design তৈরি করুন",
+    "price": 19,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "HD logo export",
+      "Custom colors",
+      "PNG & SVG support"
+    ],
+    "icon": "Palette"
+  },
+  {
+    "id": 4,
+    "name": "Social Media Scheduler",
+    "description": "Facebook ও Instagram post schedule tool",
+    "price": 12,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Auto posting",
+      "Analytics",
+      "Multi-platform support"
+    ],
+    "icon": "Calendar"
+  },
+  {
+    "id": 5,
+    "name": "E-commerce Dashboard",
+    "description": "Online store management dashboard",
+    "price": 49,
+    "period": "yearly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Sales report",
+      "Inventory tracking",
+      "Customer analytics"
+    ],
+    "icon": "ShoppingCart"
+  },
+  {
+    "id": 6,
+    "name": "AI Chatbot Pro",
+    "description": "Website chatbot integration service",
+    "price": 29,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "24/7 support",
+      "Custom replies",
+      "Lead collection"
+    ],
+    "icon": "MessageCircle"
+  },
+  {
+    "id": 7,
+    "name": "SEO Booster Tool",
+    "description": "Website SEO optimization toolkit",
+    "price": 15,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Keyword analysis",
+      "Meta suggestions",
+      "Performance report"
+    ],
+    "icon": "Search"
+  },
+  {
+    "id": 8,
+    "name": "Invoice Maker",
+    "description": "ব্যবসার জন্য invoice generate tool",
+    "price": 5,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "PDF export",
+      "Auto tax calculation",
+      "Custom branding"
+    ],
+    "icon": "Receipt"
+  },
+  {
+    "id": 9,
+    "name": "AI Content Writer",
+    "description": "Blog ও social post generate করার tool",
+    "price": 25,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Article writing",
+      "SEO content",
+      "Social captions"
+    ],
+    "icon": "PenTool"
+  },
+  {
+    "id": 10,
+    "name": "Analytics Pro",
+    "description": "Business performance tracking tool",
+    "price": 99,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Real-time insights",
+      "Custom charts",
+      "Growth tracking"
+    ],
+    "icon": "BarChart"
+  }
+]
