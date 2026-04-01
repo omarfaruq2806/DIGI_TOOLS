@@ -35,7 +35,7 @@ const Carts = ({ carts, setCarts }) => {
               >
                 <div className="flex gap-3 items-center">
                   <div>
-                    <img src="" alt="logo" />
+                    <img src={item.icon} alt="logo" />
                   </div>
                   <div className="flex flex-col text-left">
                     <h1 className="text-xl font-medium">{item.name}</h1>

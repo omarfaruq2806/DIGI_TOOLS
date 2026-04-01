@@ -1,8 +1,8 @@
 import React from "react";
-import hero from "../assets/banner.png";
+import hero from "/assets/banner.png";
 const Banner = () => {
   return (
-    <div className="max-w-7xl mx-auto flex flex-col md:flex-row-reverse justify-center items-center gap-20 mt-10">
+    <div className="max-w-7xl pt-10 mx-auto flex flex-col md:flex-row-reverse justify-center items-center gap-20 mt-10">
       <div className="flex-1 ">
         <img src={hero} alt="Hero" className="p-4 md:pl-20 " />
       </div>

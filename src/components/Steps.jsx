@@ -1,7 +1,7 @@
 import React from "react";
-import user from "../assets/user.png";
-import Package from "../assets/package.png";
-import rocket from "../assets/rocket.png";
+import user from "/assets/user.png";
+import Package from "/assets/package.png";
+import rocket from "/assets/rocket.png";
 const Steps = () => {
   return (
     <div className="bg-gray-50 px-8 md:px-32 py-12">

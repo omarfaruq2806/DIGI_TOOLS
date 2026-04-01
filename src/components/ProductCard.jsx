@@ -1,18 +1,6 @@
 import React, { useState } from "react";
 import { FaCheck } from "react-icons/fa6";
 import { toast } from "react-toastify";
-// import {
-//   FaFileAlt,
-//   FaGlobe,
-//   IoIosColorPalette,
-//   FaRegCalendarAlt,
-//   MdOutlineShoppingCart,
-//   LuMessageCircleMore,
-//   HiOutlineDocumentReport,
-//   IoReceipt,
-//   FiPenTool,
-//   IoBarChartOutline,
-// } from "react-icons/fa";
 
 const ProductCard = ({ product, carts, setCarts }) => {
   const [isSubcribed, setIsSubscribed] = useState(false);
@@ -33,8 +21,8 @@ const ProductCard = ({ product, carts, setCarts }) => {
   return (
     <div className="border border-gray-200 shadow-xl rounded-xl text-left p-6 space-y-4">
       <div className="flex justify-between">
-        <p></p>
-        <p className=" bg-purple-300 rounded-full inline-block px-3 py-1">
+        <img src={product.icon} alt="logo" className=" w-10 h-10 " />
+        <p className=" bg-purple-300 rounded-full inline-block p-2">
           {product.tagType}
         </p>
       </div>

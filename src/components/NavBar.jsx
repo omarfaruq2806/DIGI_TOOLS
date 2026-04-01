@@ -2,7 +2,7 @@ import React from "react";
 import { CiShoppingCart } from "react-icons/ci";
 const NavBar = ({ carts }) => {
   return (
-    <div className=" navbar bg-base-100 shadow-sm px-6 md:px-25">
+    <div className="fixed top-0 navbar bg-base-100 shadow-sm px-6 md:px-25">
       <div className="navbar-start">
         <div className="dropdown"></div>
         <a className="text-xl md:text-2xl font-bold text-purple-600" href="#">

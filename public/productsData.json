@@ -13,7 +13,7 @@
       "ATS optimization",
       "Export to PDF"
     ],
-    "icon": "FileText"
+    "icon": "/assets/products/operation.png"
   },
   {
     "id": 2,
@@ -28,7 +28,7 @@
       "Dark mode",
       "SEO friendly"
     ],
-    "icon": "Globe"
+    "icon": "/assets/products/design-tool.png"
   },
   {
     "id": 3,
@@ -43,7 +43,7 @@
       "Custom colors",
       "PNG & SVG support"
     ],
-    "icon": "Palette"
+    "icon": "/assets/products/writing.png"
   },
   {
     "id": 4,
@@ -58,7 +58,7 @@
       "Analytics",
       "Multi-platform support"
     ],
-    "icon": "Calendar"
+    "icon": "/assets/products/social-media.png"
   },
   {
     "id": 5,
@@ -73,7 +73,7 @@
       "Inventory tracking",
       "Customer analytics"
     ],
-    "icon": "ShoppingCart"
+    "icon": "/assets/products/shopping-cart.png"
   },
   {
     "id": 6,
@@ -88,7 +88,7 @@
       "Custom replies",
       "Lead collection"
     ],
-    "icon": "MessageCircle"
+    "icon": "/assets/products/ai.png"
   },
   {
     "id": 7,
@@ -103,7 +103,7 @@
       "Meta suggestions",
       "Performance report"
     ],
-    "icon": "Search"
+    "icon": "/assets/products/seo.png"
   },
   {
     "id": 8,
@@ -118,7 +118,7 @@
       "Auto tax calculation",
       "Custom branding"
     ],
-    "icon": "Receipt"
+    "icon": "/assets/products/invoice.jpg"
   },
   {
     "id": 9,
@@ -133,7 +133,7 @@
       "SEO content",
       "Social captions"
     ],
-    "icon": "PenTool"
+    "icon": "/assets/products/content.jpg"
   },
   {
     "id": 10,
@@ -148,6 +148,6 @@
       "Custom charts",
       "Growth tracking"
     ],
-    "icon": "BarChart"
+    "icon": "/assets/products/analytics.webp"
   }
 ]
