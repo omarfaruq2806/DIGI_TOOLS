@@ -21,7 +21,7 @@ const ProductCard = ({ product, carts, setCarts }) => {
   return (
     <div className="border border-gray-200 shadow-xl rounded-xl text-left p-6 space-y-4">
       <div className="flex justify-between">
-        <img src={product.icon} alt="logo" className=" w-10 h-10 " />
+        <img src={product.icon} alt="logo" className="w-10"/>
         <p className=" bg-purple-300 rounded-full inline-block p-2">
           {product.tagType}
         </p>
