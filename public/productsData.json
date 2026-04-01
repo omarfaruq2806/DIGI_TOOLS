@@ -1,8 +1,9 @@
+
 [
   {
     "id": 1,
     "name": "AI Resume Builder",
-    "description": "Professional resume তৈরির জন্য AI tool",
+    "description": "AI tool ForProfessional resume ",
     "price": 0,
     "period": "one-time",
     "tag": "popular",
@@ -32,7 +33,7 @@
   {
     "id": 3,
     "name": "AI Logo Generator",
-    "description": "মিনিটে logo design তৈরি করুন",
+    "description": "Create logo in few Moments ",
     "price": 19,
     "period": "one-time",
     "tag": "best seller",
@@ -47,7 +48,7 @@
   {
     "id": 4,
     "name": "Social Media Scheduler",
-    "description": "Facebook ও Instagram post schedule tool",
+    "description": "Facebook & Instagram post schedule tool",
     "price": 12,
     "period": "monthly",
     "tag": "popular",
@@ -107,7 +108,7 @@
   {
     "id": 8,
     "name": "Invoice Maker",
-    "description": "ব্যবসার জন্য invoice generate tool",
+    "description": "Invoice generate tool for BUSINESS",
     "price": 5,
     "period": "one-time",
     "tag": "new",
@@ -122,7 +123,7 @@
   {
     "id": 9,
     "name": "AI Content Writer",
-    "description": "Blog ও social post generate করার tool",
+    "description": "Tool for Blog & social post generate ",
     "price": 25,
     "period": "monthly",
     "tag": "best seller",
