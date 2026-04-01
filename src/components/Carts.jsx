@@ -1,13 +1,17 @@
 import React from "react";
+import { toast } from "react-toastify";
+import Products from "./Products";
 
 const Carts = ({ carts, setCarts }) => {
   const totalPrice = carts.reduce((sum, item) => sum + item.price, 0);
 
   const handlePayment = () => {
     setCarts([]);
+    toast.success("Your Checkout Successfull")
   };
 
-  const removeFromCart = (id) => {
+  const removeFromCart = (id , name) => {
+    toast.error(`${name} Deleted from Cart`)
     const updatedCarts = carts.filter((item) => item.id !== id);
     setCarts(updatedCarts);
   };
@@ -38,7 +42,7 @@ const Carts = ({ carts, setCarts }) => {
                     <p>${item.price}</p>
                   </div>
                 </div>
-                <button onClick={() => removeFromCart(item.id)} className="text-red-400 ">Remove</button>
+                <button onClick={() => removeFromCart(item.id , item.name)} className="text-red-400 ">Remove</button>
               </div>
             );
           })}

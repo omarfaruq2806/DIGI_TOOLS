@@ -10,6 +10,7 @@ import Products from "./components/Products";
 import Review from "./components/Review";
 import Steps from "./components/Steps";
 import Transform from "./components/Transform";
+import { ToastContainer, toast } from 'react-toastify';
 
 const getProductsData = async () => {
   const res = await fetch("/productsData.json");
@@ -20,6 +21,7 @@ function App() {
   const [carts , setCarts] = useState([]);
   return (
     <>
+    <ToastContainer/>
       <NavBar carts={carts} />
 
       <Banner />

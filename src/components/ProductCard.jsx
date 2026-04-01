@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaCheck } from "react-icons/fa6";
+import { toast } from "react-toastify";
 // import {
 //   FaFileAlt,
 //   FaGlobe,
@@ -14,19 +15,20 @@ import { FaCheck } from "react-icons/fa6";
 // } from "react-icons/fa";
 
 const ProductCard = ({ product, carts, setCarts }) => {
-
   const [isSubcribed, setIsSubscribed] = useState(false);
 
   const buyNow = () => {
     setIsSubscribed(true);
+    toast.success(`${product.name} Successfully added`);
+
     const isFound = carts.find((item) => item.id === product.id);
+
     if (isFound) {
-      //toast notification
+      toast.error(`${product.name} already added`);
       return;
     }
     setCarts([...carts, product]);
   };
-
 
   return (
     <div className="border border-gray-200 shadow-xl rounded-xl text-left p-6 space-y-4">
@@ -39,7 +41,12 @@ const ProductCard = ({ product, carts, setCarts }) => {
       <h1 className="text-2xl font-semibold">{product.name}</h1>
       <p className="">{product.description}</p>
       <h2>
-        <span className="text-3xl font-bold">${product.price}</span>{product.period === "monthly" ? "/month" : product.period === "yearly" ? "/year" : "One-time"}
+        <span className="text-3xl font-bold">${product.price}</span>
+        {product.period === "monthly"
+          ? "/month"
+          : product.period === "yearly"
+            ? "/year"
+            : "One-time"}
       </h2>
       <ul>
         {product.features.map((feature, index) => (
