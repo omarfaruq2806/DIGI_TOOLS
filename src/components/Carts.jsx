@@ -29,16 +29,16 @@ const Carts = ({ carts, setCarts }) => {
                 key={item.id}
                 className="border border-gray-100 shadow-xs rounded-xl  p-6 space-y-4 flex items-center justify-between"
               >
-                <div className="flex gap-2">
+                <div className="flex gap-3 items-center">
                   <div>
                     <img src="" alt="logo" />
                   </div>
-                  <div className="flex flex-col ">
-                    <h1>{item.name}</h1>
+                  <div className="flex flex-col text-left">
+                    <h1 className="text-xl font-medium">{item.name}</h1>
                     <p>${item.price}</p>
                   </div>
                 </div>
-                <button onClick={() => removeFromCart(item.id)}>Remove</button>
+                <button onClick={() => removeFromCart(item.id)} className="text-red-400 ">Remove</button>
               </div>
             );
           })}

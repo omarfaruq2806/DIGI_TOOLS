@@ -4,7 +4,7 @@ import Package from "../assets/package.png";
 import rocket from "../assets/rocket.png";
 const Steps = () => {
   return (
-    <div className="bg-gray-50 px-32 py-12">
+    <div className="bg-gray-50 px-8 md:px-32 py-12">
       <h1 className="text-center text-3xl font-bold">Get Started in 3 Steps</h1>
       <p className="text-center">
         Start using premium digital tools in minutes, not hours.

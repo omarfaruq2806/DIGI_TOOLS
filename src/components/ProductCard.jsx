@@ -21,25 +21,25 @@ const ProductCard = ({ product, carts, setCarts }) => {
     setIsSubscribed(true);
     const isFound = carts.find((item) => item.id === product.id);
     if (isFound) {
-      alert("Item already in cart!");
+      //toast notification
       return;
     }
     setCarts([...carts, product]);
   };
 
-  
+
   return (
     <div className="border border-gray-200 shadow-xl rounded-xl text-left p-6 space-y-4">
       <div className="flex justify-between">
         <p></p>
         <p className=" bg-purple-300 rounded-full inline-block px-3 py-1">
-          {product.tag}
+          {product.tagType}
         </p>
       </div>
       <h1 className="text-2xl font-semibold">{product.name}</h1>
       <p className="">{product.description}</p>
       <h2>
-        <span className="text-3xl font-bold">${product.price}</span>/month
+        <span className="text-3xl font-bold">${product.price}</span>{product.period === "monthly" ? "/month" : product.period === "yearly" ? "/year" : "One-time"}
       </h2>
       <ul>
         {product.features.map((feature, index) => (
