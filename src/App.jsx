@@ -1,4 +1,5 @@
 // import { useState } from "react";
+import { useState } from "react";
 import "./App.css";
 import Banner from "./components/Banner";
 import Carts from "./components/Carts";
@@ -16,15 +17,16 @@ const getProductsData = async () => {
 };
 const productsData = getProductsData();
 function App() {
+  const [carts , setCarts] = useState([]);
   return (
     <>
-      <NavBar />
+      <NavBar carts={carts} />
 
       <Banner />
 
       <Review />
 
-      <Products productsData={productsData} />
+      <Products productsData={productsData} carts={carts} setCarts={setCarts} />
 
       <Steps />
       <Pricing />

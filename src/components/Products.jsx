@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import ProductCard from "./ProductCard";
 import { use } from "react";
 import Carts from "./Carts";
-function Products({ productsData }) {
+function Products({ productsData  , carts, setCarts }) {
   const cardData = use(productsData);
   const [activeTab, setActiveTab] = useState("products");
+  
 
   return (
-    <div className="p-30 text-center">
+    <div className="p-10 md:p-30 text-center">
       <div className="space-y-4">
         <h1 className="text-4xl font-bold ">Premium Digital Tools</h1>
         <p className="text-gray-500">
@@ -27,7 +28,7 @@ function Products({ productsData }) {
           className={`tab rounded-full w-30 shadow-xs border border-gray-100 ${activeTab === "carts" ? "bg-purple-500 text-white" : ""}`}
           onClick={() => setActiveTab("carts")}
         >
-          Carts
+          Carts ({carts.length})
         </button>
       </div>
 
@@ -35,12 +36,12 @@ function Products({ productsData }) {
         {activeTab === "products" && (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
             {cardData.map((product) => (
-              <ProductCard key={product.id} product={product} />
+              <ProductCard key={product.id} product={product} carts={carts} setCarts={setCarts} />
             ))}
           </div>
         )}
       </div>
-      {activeTab === "carts" && <Carts />}
+      {activeTab === "carts" && <Carts carts={carts} setCarts={setCarts} />}
     </div>
   );
 }

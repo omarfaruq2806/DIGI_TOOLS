@@ -1,6 +1,6 @@
 import React from "react";
 import { CiShoppingCart } from "react-icons/ci";
-const NavBar = () => {
+const NavBar = ({ carts }) => {
   return (
     <div className=" navbar bg-base-100 shadow-sm px-25">
       <div className="navbar-start">
@@ -19,9 +19,11 @@ const NavBar = () => {
       </ul>
 
       <div className="navbar-end gap-4">
-        <div className="">
-          <CiShoppingCart size={24} />
-          <p>{}</p>
+        <div className="relative">
+          <CiShoppingCart size={30} />
+          <p className="absolute -top-2 -right-2 bg-purple-600 text-white p-1 text-xs rounded-full flex items-center justify-center w-6">
+            {carts.length}
+          </p>
         </div>
         <a href="#">Log in</a>
         <a className="btn bg-purple-600 text-white rounded-full">Get Started</a>
